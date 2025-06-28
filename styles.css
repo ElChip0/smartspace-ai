@@ -1,0 +1,144 @@
+/* public/assets/styles/styles.css */
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fafafa;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    background: #1E88E5;
+    color: #fff;
+    padding: 20px 0;
+  }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .btn {
+    display: inline-block;
+    background: #fff;
+    color: #1E88E5;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  .btn:hover {
+    background: #f0f0f0;
+  }
+  
+  /* Hero */
+  .hero {
+    background: url('../images/hero-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Secciones */
+  section {
+    padding: 60px 0;
+  }
+  .features ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .features li {
+    flex: 1 1 200px;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .how-it-works ol {
+    list-style: decimal inside;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .contact input,
+  .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .contact button {
+    background: #1E88E5;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .contact button:hover {
+    background: #1669b2;
+  }
+  
+  /* Footer */
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    header .container {
+      flex-direction: column;
+      gap: 15px;
+    }
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero {
+      padding: 60px 0;
+    }
+  }
+  
