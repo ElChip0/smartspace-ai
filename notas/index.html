@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartSpace AI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f7f9fc;
+      color: #333;
+    }
+    header {
+      background: #0d47a1;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: #e3f2fd;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .hero button {
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      background: #0d47a1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    .features, .how-it-works {
+      max-width: 800px;
+      margin: auto;
+    }
+    .features h2, .how-it-works h2, .contact h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .features ul, .how-it-works ol {
+      list-style: none;
+      padding: 0;
+      text-align: center;
+    }
+    .features li, .how-it-works li {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .contact input, .contact textarea {
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact button {
+      padding: 0.8rem;
+      background: #0d47a1;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #0d47a1;
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>SmartSpace AI</strong></div>
+    <nav>
+      <a href="#features">Características</a>
+      <a href="#how">Cómo Funciona</a>
+      <a href="#contact">Contacto</a>
+      <a href="#hero">Empieza Ahora</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="hero">
+    <h1>Diseña tu espacio con Realidad Aumentada</h1>
+    <p>Escanea tu habitación y visualiza muebles en tiempo real.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Comenzar</button>
+  </section>
+
+  <section class="features" id="features">
+    <h2>Características</h2>
+    <ul>
+      <li>📏 Escaneo inteligente de habitaciones</li>
+      <li>🛋️ Visualización en AR de muebles</li>
+      <li>🌱 Recomendaciones sostenibles</li>
+    </ul>
+  </section>
+
+  <section class="how-it-works" id="how">
+    <h2>Cómo Funciona</h2>
+    <ol>
+      <li>1. Escanea tu espacio</li>
+      <li>2. Elige estilos y muebles</li>
+      <li>3. Visualiza en realidad aumentada</li>
+    </ol>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contacto</h2>
+    <form>
+      <input type="email" placeholder="Tu correo" required />
+      <textarea rows="5" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    ©️ 2025 SmartSpace AI. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
